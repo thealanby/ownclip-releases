@@ -2,7 +2,7 @@
 
 Public binary distribution for [OwnClip](https://ownclip.io) — the native macOS screen recorder with AI camera effects.
 
-This repo only hosts release artifacts. Source code is private.
+Source code is private. This repo only hosts release artifacts.
 
 ## Latest
 
@@ -11,8 +11,8 @@ This repo only hosts release artifacts. Source code is private.
 
 ## Requirements
 
-macOS 14 (Sonoma) or later, Apple Silicon (M1+).
+macOS 14 (Sonoma) or later, Apple Silicon (M1 or newer).
 
-## Verification
+## Authenticity
 
-Builds are signed with `Developer ID Application: Tomer Weiss (W6648WB7KR)` and notarized by Apple. Sparkle update payloads are additionally signed with an EdDSA key pinned in the app's Info.plist.
+All builds are code-signed with a valid Apple Developer ID and notarized by Apple. macOS Gatekeeper will accept the DMG without warnings on first launch. Sparkle auto-update payloads are additionally signed with an EdDSA key pinned in the app, so updates can't be tampered with in transit.
